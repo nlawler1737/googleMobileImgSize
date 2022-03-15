@@ -7,7 +7,6 @@ observer.observe(target, {
     once: true
 });
 
-}
 function startTextAdd(){
     let img = document.querySelector('#yDmH0d > div.A8mJGd > div > div.pxAole > div.tvh9oe.BIB1wf > c-wiz > div > div.OUZ5W > div.zjoqD > div.qdnLaf.isv-id > div > img')
     if (!img) return
