@@ -1,4 +1,5 @@
 console.log(document.location.host + document.location.pathname)
+try {
 if (document.location.host + document.location.pathname == 'www.google.com/search') {
 try {
 document.addEventListener('click',function() {
@@ -20,3 +21,4 @@ document.addEventListener('click',function() {
 })
 } catch(e){console.log(e)}
 }
+} catch(e){console.log(e)}
