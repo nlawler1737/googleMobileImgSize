@@ -1,9 +1,15 @@
-console.log(document.location.host + document.location.pathname)
-try {
-if (document.location.host + document.location.pathname == 'www.google.com/search') {
-try {
-document.addEventListener('click',function() {
-    console.log(document.location.host + document.location.pathname)
+if (document.location.host == 'www.google.com') {
+var target = document.querySelector('body')
+var observer = new MutationObserver(function(mutations) {
+    startTextAdd() 
+});
+observer.observe(target, {
+    attributes:    true,
+    once: true
+});
+
+}
+function startTextAdd(){
     let img = document.querySelector('#yDmH0d > div.A8mJGd > div > div.pxAole > div.tvh9oe.BIB1wf > c-wiz > div > div.OUZ5W > div.zjoqD > div.qdnLaf.isv-id > div > img')
     if (!img) return
     let oldText = document.querySelector('#imgSizeText')
@@ -18,7 +24,4 @@ document.addEventListener('click',function() {
     imgParent.appendChild(imgSize)
         console.log('done')
 }
-})
-} catch(e){console.log(e)}
-}
-} catch(e){console.log(e)}
+    }
