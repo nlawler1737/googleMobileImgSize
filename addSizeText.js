@@ -1,9 +1,11 @@
 var target = document.querySelector('body')
 var observer = new MutationObserver(function(mutations) {
+    console.log(document.location.host)
+    console.log(window.location.host)
     startTextAdd() 
 });
 observer.observe(target, {
-    attributes:    true,
+    attributes: true,
     once: true
 });
 
