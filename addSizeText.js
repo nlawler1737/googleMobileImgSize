@@ -1,4 +1,3 @@
-if (document.location.host == 'www.google.com') {
 var target = document.querySelector('body')
 var observer = new MutationObserver(function(mutations) {
     startTextAdd() 
@@ -24,4 +23,3 @@ function startTextAdd(){
     imgParent.appendChild(imgSize)
         console.log('done')
 }
-    }
