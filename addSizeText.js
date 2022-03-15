@@ -1,4 +1,6 @@
+console.log(document.location.host + document.location.pathname)
 if (document.location.host + document.location.pathname == 'www.google.com/search') {
+try {
 document.addEventListener('click',function() {
     let img = document.querySelector('#yDmH0d > div.A8mJGd > div > div.pxAole > div.tvh9oe.BIB1wf > c-wiz > div > div.OUZ5W > div.zjoqD > div.qdnLaf.isv-id > div > img')
     if (!img) return
@@ -15,4 +17,5 @@ document.addEventListener('click',function() {
         console.log('done')
 }
 })
+} catch(e){console.log(e)}
 }
