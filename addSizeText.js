@@ -22,3 +22,4 @@ function startTextAdd(){
     imgParent.appendChild(imgSize)
         console.log('done')
 }
+}
